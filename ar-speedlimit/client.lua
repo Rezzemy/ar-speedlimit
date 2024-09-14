@@ -42,7 +42,7 @@ end
 function awareSetSpeed(vehicle)
     local vehicleclass = findVehicleByModel(string.lower(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))))
     local maxSpeed = Config[vehicleclass]
-    print(vehicleclass, maxSpeed, Config.MaxUnknown)
+    --print(vehicleclass, maxSpeed, Config.MaxUnknown)
     if maxSpeed ~= nil then
         SetVehicleMaxSpeed(vehicle, maxSpeed / mphValue)
 		set = true
